@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Notas</title>
+    <link rel="stylesheet" href="/scripts/styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Notas:</h1>
+        
+        <!-- Sección para agregar nuevas notas -->
+        <div class="controls">
+            <input type="text" id="new-note" placeholder="Escribí una nota">
+            <button id="add-note-btn">Agregar nota</button>
+        </div>
+
+        <!-- Filtros de búsqueda y estado -->
+        <div class="filters">
+            <input type="text" id="search" placeholder="Buscar nota">
+            <label>
+                <input type="checkbox" id="show-completed">
+                Solo completas
+            </label>
+        </div>
+
+        <!-- Lista de notas -->
+        <ul id="notes-list"></ul>
+    </div>
+
+    <!-- Archivo JavaScript -->
+    <script src="scripts/app.js"></script>
+</body>
+</html>
+
